@@ -1,0 +1,174 @@
+---
+name: Retail Ecosystem
+colors:
+  surface: '#f7fafa'
+  surface-dim: '#d7dbdb'
+  surface-bright: '#f7fafa'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f1f4f4'
+  surface-container: '#ebeeee'
+  surface-container-high: '#e6e9e9'
+  surface-container-highest: '#e0e3e3'
+  on-surface: '#181c1d'
+  on-surface-variant: '#554434'
+  inverse-surface: '#2d3131'
+  inverse-on-surface: '#eef1f1'
+  outline: '#887361'
+  outline-variant: '#dbc2ad'
+  surface-tint: '#8a5100'
+  primary: '#8a5100'
+  on-primary: '#ffffff'
+  primary-container: '#ff9900'
+  on-primary-container: '#653a00'
+  inverse-primary: '#ffb86f'
+  secondary: '#595f68'
+  on-secondary: '#ffffff'
+  secondary-container: '#dae0eb'
+  on-secondary-container: '#5d636d'
+  tertiary: '#535f70'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#a6b2c5'
+  on-tertiary-container: '#394555'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ffdcbd'
+  primary-fixed-dim: '#ffb86f'
+  on-primary-fixed: '#2c1600'
+  on-primary-fixed-variant: '#693c00'
+  secondary-fixed: '#dde3ee'
+  secondary-fixed-dim: '#c1c7d2'
+  on-secondary-fixed: '#161c24'
+  on-secondary-fixed-variant: '#414750'
+  tertiary-fixed: '#d7e3f7'
+  tertiary-fixed-dim: '#bbc7db'
+  on-tertiary-fixed: '#101c2b'
+  on-tertiary-fixed-variant: '#3c4858'
+  background: '#f7fafa'
+  on-background: '#181c1d'
+  surface-variant: '#e0e3e3'
+typography:
+  headline-xl:
+    fontFamily: Inter
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 34px
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 28px
+  headline-md:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 22px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 18px
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 10px
+    fontWeight: '500'
+    lineHeight: 14px
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 12px
+  margin: 16px
+  space-xs: 4px
+  space-sm: 8px
+  space-md: 16px
+  space-lg: 24px
+  space-xl: 32px
+---
+
+## Brand & Style
+
+This design system is crafted for high-volume commerce, prioritizing efficiency, trust, and frictionless transactions. The aesthetic bridges utilitarian functionality with approachable consumer retail standards. 
+
+- **Brand Personality:** Trustworthy, efficient, accessible, and direct.
+- **Target Audience:** Digital consumers seeking vast selection, competitive pricing, and rapid fulfillment.
+- **Emotional Response:** Confidence, security, and effortless discovery.
+- **Design Style:** Corporate / Modern, optimized for density, readability, and rapid scanning.
+
+## Colors
+
+The color palette establishes immediate retail recognition through authoritative dark navy structural elements and high-conversion warm orange interactions. 
+
+- **Primary (`#FF9900`):** Reserved strictly for primary calls-to-action, pricing emphasis, and conversion highlights.
+- **Secondary (`#131921`):** Applied to app headers, navigation bars, and primary dark surfaces to ground the interface.
+- **Tertiary (`#232F3E`):** Used for sub-headers, dark mode accents, and secondary navigation elements.
+- **Neutral (`#EAEDED` & `#FFFFFF`):** Provides the foundational canvas. Pure white (`#FFFFFF`) forms distinct card surfaces, while light gray (`#EAEDED`) acts as the background separator for high readability and content partitioning.
+
+## Typography
+
+Typography prioritizes extreme legibility across varied mobile viewports. Using Inter throughout establishes a clean, systematic, and utilitarian information hierarchy.
+
+- Scale tightly controls density, ensuring dense product listings, pricing matrices, and review snippets remain scannable without visual fatigue.
+- Font weights are strictly managed to separate navigational chrome (bold) from descriptive product data (regular).
+
+## Layout & Spacing
+
+The layout model relies on a structured 12-column fluid grid adapted for mobile viewports, emphasizing compact, horizontal product carousels and vertical list feeds.
+
+- **Margins & Gutters:** Outer canvas margins are set to a consistent `16px`, with `12px` gutters separating card grids to maximize screen real estate for merchandise.
+- **Rhythm:** Spacing follows an 8px baseline grid scale, ensuring predictable, scannable vertical rhythms between product titles, ratings, pricing, and fulfillment badges.
+
+## Elevation & Depth
+
+Visual hierarchy relies on low-contrast outlines and clean surface-container separation rather than heavy drop shadows, preserving a flat, high-performance mobile UI.
+
+- **Surfaces:** Pure white product cards sit on light neutral backgrounds (`#EAEDED`), separated by subtle 1px borders (`#D5DBDB`) to define touch targets.
+- **Floating Elements:** Sticky bottom checkout bars and floating filters use minimal, diffused ambient shadows to lift them above the scrolling content without adding visual noise.
+
+## Shapes
+
+A soft shape language balances approachability with industrial precision. 
+
+- **Radii:** Standard UI elements feature a `0.25rem` (`4px`) corner radius, projecting a functional, reliable retail tool. Larger containers (`rounded-lg`) use `0.5rem` (`8px`) for modal dialogs and promotional banners.
+- **Badges & Pills:** Category filters and discount tags utilize pill-shaped radiuses to clearly demarcate interactive filters from static content.
+
+## Components
+
+Components are engineered for high-intent conversion and rapid scanning.
+
+- **Buttons:** Primary CTA buttons utilize the signature warm orange (`#FF9900`) with dark charcoal text for maximum contrast. Secondary buttons feature neutral white backgrounds with dark borders.
+- **Input Fields:** Search bars and form inputs feature a crisp 1px border, high-contrast placeholder text, and integrated clear/scan action icons on the trailing edge.
+- **Cards:** Product cards feature a clean white surface, pinned image aspect ratios, truncated two-line titles, prominent pricing typography, and star-rating rows.
+- **Chips & Filters:** Horizontal scrollable chip groups for refined attribute selection (e.g., Prime eligible, brand, price range).
+- **Checkboxes & Radios:** High-contrast square checkboxes and circular radio inputs optimized for dense filter drawers and checkout options.
+- **Lists:** Structured list rows with leading thumbnails, multi-line metadata, and trailing chevron indicators for order history and settings menus.

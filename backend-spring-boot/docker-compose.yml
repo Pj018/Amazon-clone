@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # MySQL 8.0 Production Database
+  mysqldb:
+    image: mysql:8.0.36
+    container_name: amazon-prime-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: prime_secret_pass
+      MYSQL_DATABASE: amazon_prime_db
+      MYSQL_USER: prime_user
+      MYSQL_PASSWORD: prime_user_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  # Spring Boot 3.3.4 Application Backend
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: amazon-prime-spring-boot
+    restart: unless-stopped
+    depends_on:
+      mysqldb:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      MYSQL_HOST: mysqldb
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: amazon_prime_db
+      MYSQL_USER: prime_user
+      MYSQL_PASSWORD: prime_user_pass
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:

@@ -1,0 +1,6 @@
+{
+  "name": "Amazon Prime Retail Ecosystem",
+  "description": "Full-scale Amazon-grade retail commerce ecosystem featuring multi-category storefront, Seller Central analytics dashboard, secure authentication, encrypted storage, and offline sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
